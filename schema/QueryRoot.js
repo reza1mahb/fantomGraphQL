@@ -9,6 +9,8 @@ import joinMonster from 'join-monster'
 import { nodeField } from './types/Node'
 
 import { round, rounds } from './resolvers/roundsResolver'
+import { block, blocks } from './resolvers/blocksResolver'
+import { transaction, transactions } from './resolvers/transactionsResolver'
 import { consensusEvent, consensusEvents } from './resolvers/consensusEventsResolver'
 
 export default new GraphQLObjectType({
@@ -22,12 +24,14 @@ export default new GraphQLObjectType({
 
     node: nodeField,
 
-    // policies_trickle
-
-    //policy
-
     round: round,
     rounds: rounds,
+
+    block: block,
+    blocks: blocks,
+
+    transaction: transaction,
+    transactions: transactions,
 
     consensusEvent: consensusEvent,
     consensusEvents: consensusEvents,
