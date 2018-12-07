@@ -58,6 +58,21 @@ const transaction = {
 const transactions = {
   type: TransactionConnection,
   args: {
+    hash: {
+      type: GraphQLString
+    },
+    from: {
+      type: GraphQLString
+    },
+    to: {
+      type: GraphQLString
+    },
+    contract: {
+      type: GraphQLString
+    },
+    block: {
+      type: GraphQLString
+    },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,
