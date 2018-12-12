@@ -49,6 +49,7 @@ const block = {
 const blocks = {
   type: BlockConnection,
   args: {
+    by: { type: ColumnEnum },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,

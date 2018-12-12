@@ -73,6 +73,7 @@ const transactions = {
     block: {
       type: GraphQLString
     },
+    by: { type: ColumnEnum },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,
