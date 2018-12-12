@@ -66,7 +66,7 @@ const blocks = {
     var aa = []
 
     for (var property in args) {
-      if(property != 'limit' && property != 'first' && property != 'last' && property != 'before' && property != 'after' && property != 'by' && property != 'situations') {
+      if(property != 'limit' && property != 'byDirection' && property != 'first' && property != 'last' && property != 'before' && property != 'after' && property != 'by' && property != 'situations') {
         if(typeof args[property] === 'string') {
           aa.push(`${table}.`+property+` like \'`+args[property]+`\'`)
         } else if(typeof args[property] === 'boolean') {
