@@ -51,13 +51,15 @@ const blocks = {
   type: BlockConnection,
   args: {
     by: { type: GraphQLString },
+    byDirection: { type: GraphQLString },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,
   orderBy: args => {
     const sortBy = args.by || 'index'
+    const sortDirection = args.byDirection || 'asc'
     return {
-      [sortBy]: 'asc'
+      [sortBy]: sortDirection
     }
   },
   where: (table, args, context) => {

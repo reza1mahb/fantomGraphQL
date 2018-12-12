@@ -75,13 +75,15 @@ const transactions = {
       type: GraphQLString
     },
     by: { type: GraphQLString },
+    byDirection: { type: GraphQLString },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,
   orderBy: args => {
     const sortBy = args.by || 'hash'
+    const sortDirection = args.byDirection || 'asc'
     return {
-      [sortBy]: 'asc'
+      [sortBy]: sortDirection
     }
   },
   where: (table, args, context) => {
