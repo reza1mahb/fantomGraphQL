@@ -50,7 +50,7 @@ const block = {
 const blocks = {
   type: BlockConnection,
   args: {
-    by: { type: ColumnEnum },
+    by: { type: GraphQLString },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,

@@ -74,7 +74,7 @@ const transactions = {
     block: {
       type: GraphQLString
     },
-    by: { type: ColumnEnum },
+    by: { type: GraphQLString },
     ...forwardConnectionArgs
   },
   sqlPaginate: true,
