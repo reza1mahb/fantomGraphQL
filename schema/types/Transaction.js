@@ -38,19 +38,19 @@ const Transaction = new GraphQLObjectType({
       type: GraphQLString
     },
     value: {
-      type: GraphQLInt
+      type: GraphQLString
     },
     gas: {
-      type: GraphQLInt
+      type: GraphQLString
     },
     used: {
-      type: GraphQLInt
+      type: GraphQLString
     },
     price: {
-      type: GraphQLInt
+      type: GraphQLString
     },
     cumulative: {
-      type: GraphQLInt
+      type: GraphQLString
     },
     contract: {
       type: GraphQLString
