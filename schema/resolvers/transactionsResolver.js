@@ -1,13 +1,6 @@
-import {
-  GraphQLObjectType,
-  GraphQLInt,
-  GraphQLString,
-  ColumnEnum
-} from 'graphql'
+import { GraphQLString } from 'graphql'
 
-import {
-  forwardConnectionArgs
-} from 'graphql-relay'
+import { forwardConnectionArgs } from 'graphql-relay'
 
 
 import joinMonster from 'join-monster'

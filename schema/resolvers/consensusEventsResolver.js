@@ -1,7 +1,4 @@
-import {
-  GraphQLObjectType,
-  GraphQLString
-} from 'graphql'
+import { GraphQLString } from 'graphql'
 
 import {
   forwardConnectionArgs

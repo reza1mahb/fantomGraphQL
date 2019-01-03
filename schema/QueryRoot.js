@@ -12,6 +12,7 @@ import { round, rounds } from './resolvers/roundsResolver'
 import { block, blocks } from './resolvers/blocksResolver'
 import { transaction, transactions } from './resolvers/transactionsResolver'
 import { consensusEvent, consensusEvents } from './resolvers/consensusEventsResolver'
+import { vitals } from  './resolvers/vitalsResolver'
 
 export default new GraphQLObjectType({
   description: 'global query object',
@@ -23,6 +24,8 @@ export default new GraphQLObjectType({
     },
 
     node: nodeField,
+
+    vitals: vitals,
 
     round: round,
     rounds: rounds,
