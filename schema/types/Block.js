@@ -33,7 +33,10 @@ const Block = new GraphQLObjectType({
     },
     payload: {
       type: GraphQLJSON
-    }
+    },
+    created: {
+      type: GraphQLInt
+    },
   })
 })
 
