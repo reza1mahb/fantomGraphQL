@@ -8,7 +8,7 @@ import morgan from 'morgan';
 import schema from './schema';
 
 const isProduction = process.env.NODE_ENV === 'production';
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 7650;
 const app = express();
 
 app.use(cors());
